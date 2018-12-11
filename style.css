@@ -1,0 +1,65 @@
+* {
+    /* border: 1px solid red; */
+    padding-left: 15px;
+    padding-right: 15px;
+    font-family: 'Raleway', Helvetica, sans-serif;
+  }
+
+  body {
+      background-color: #ededed;
+  } 
+
+  #survey-form {
+    border-radius: 1%;
+    padding-top: 25px;
+    padding-bottom: 8px;
+    margin-bottom: 20px;
+    box-shadow: #ccc;
+  }
+
+  .form-title {
+    background-color: lightblue;
+    height: auto;
+  }
+
+  .form-control {
+    border: 0.5px solid #ededed;
+    }
+
+    form {
+        background-color: white;
+        height: auto;
+      }
+  
+  h1 {
+    padding-top: 20px;
+    text-align: center;
+  }
+
+  label {
+      text-align: right;
+  }
+
+ ::placeholder {
+      font-size: 12px;
+  }
+
+  p#description {
+    text-align: center;
+  }
+  
+  .req {
+    color: red;
+  }
+
+  textarea {
+      border-radius: 2%;
+      border: 0.5px solid #ededed;
+      width: 100%;
+  }
+
+  #submit {
+      margin-bottom: 15px;
+      border-radius: 2%;
+      height: 40px;
+  }

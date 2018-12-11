@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet">
+    <link href="style.css" rel="stylesheet">
+    </lnk>
+</head>
+
+<body>
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+
+    <div class="container-fluid">
+        <div class="row form-box">
+            <div class="col-lg-12">
+                <h1 id="title">Survey Form</h1>
+                <form id="survey-form">
+                    <p id="description">Let us know how we can improve freeCodeCamp</p>
+
+                    <!-- Name Field -->
+                    <div class="form-group row">
+                        <label id="name-label" class="col-md-6 col-form-label">
+                            <span class="req">*</span>Name</label>
+                        <div class="col-md-6">
+                            <input required class="form-control form-control-plaintext" type="text" id="name" placeholder="Enter your name"></input>
+                        </div>
+                    </div>
+
+                    <!-- Email Field -->
+                    <!-- If email is entered incorrectly show emial vailidation error -->
+                    <div class="form-group row">
+                        <label id="email-label" class="col-md-6 col-form-label">
+                            <span class="req">*</span>Email</label>
+                        <div class="col-md-6">
+                            <input required class="form-control form-control-plaintext" type="email" id="email" placeholder="Enter your email address"></input>
+                        </div>
+                    </div>
+
+                    <!-- Age Field -->
+                    <!-- If non-numbers entered show error -->
+                    <!--  If I enter numbers outside the range of the number input, which are defined by the min and max attributes, I will see an HTML5 validation error. -->
+                    <div class="form-group row">
+                        <label id="number-label" class="col-md-6 col-form-label">
+                            <span class="req">*</span>Age</label>
+                        <div class="col-md-6">
+                            <input required class="form-control form-control-plaintext" type="" id="number" placeholder="Enter your age"></input>
+                        </div>
+                    </div>
+
+                    <!-- Which option best describes your current role? -->
+                    <div class="form-group row">
+                        <label for="exampleFormControlSelect1" class="col-md-6 col-form-label">Which option best describes your current role?</label>
+                        <div class="col-md-6">
+                            <select class="form-control" id="exampleFormControlSelect1">
+                                <option disabled>Select An Option</option>
+                                <option>Student</option>
+                                <option>Full Time Job</option>
+                                <option>Full Time Learner</option>
+                                <option>Prefer Not To Say</option>
+                                <option>Other</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <!-- * How likely is that you would recommend freeCodeCamp to a friend? -->
+                    <div class="form-group row">
+                        <label for="exampleFormControlSelect1" class="col-md-6 col-form-label"><span class="req">*</span>How likely is that you would recommend freeCodeCamp to a friend?</label>
+                        <div class="col-md-6">
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                                <label class="form-check-label" for="defaultCheck1">
+                                    Front-end Projects
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                                <label class="form-check-label" for="defaultCheck1">
+                                    Back-end Projects
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                                <label class="form-check-label" for="defaultCheck1">
+                                    Data Visualization
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                                <label class="form-check-label" for="defaultCheck1">
+                                    Challenges
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                                <label class="form-check-label" for="defaultCheck1">
+                                    Open Source Community
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                                <label class="form-check-label" for="defaultCheck1">
+                                    Gitter Help Rooms
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                                <label class="form-check-label" for="defaultCheck1">
+                                    Videos
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                                <label class="form-check-label" for="defaultCheck1">
+                                    City Meetups
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                                <label class="form-check-label" for="defaultCheck1">
+                                    Wiki
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                                <label class="form-check-label" for="defaultCheck1">
+                                    Forum
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                                <label class="form-check-label" for="defaultCheck1">
+                                    Additional Courses
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- What do you like most in FCC: -->
+                    <div class="form-group row">
+                        <label for="exampleFormControlSelect1" class="col-md-6 col-form-label">What do you like most in FCC:</label>
+                        <div class="col-md-6">
+                            <select class="form-control" id="exampleFormControlSelect1">
+                                <option disabled>Select An Option</option>
+                                <option>Challenges</option>
+                                <option>Projects</option>
+                                <option>Community</option>
+                                <option>Open Source</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <!-- Things that should be improved in the future (Check all that apply): -->
+                   <div class="form-group row">
+                        <label for="exampleFormControlSelect1" class="col-md-6 col-form-label">Things that should be improved in the future (Check all that apply):</label>
+                        <div class="col-md-6">
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                                <label class="form-check-label" for="defaultCheck1">
+                                    Front-end Projects
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                                <label class="form-check-label" for="defaultCheck1">
+                                    Back-end Projects
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                                <label class="form-check-label" for="defaultCheck1">
+                                    Data Visualization
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                                <label class="form-check-label" for="defaultCheck1">
+                                    Challenges
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                                <label class="form-check-label" for="defaultCheck1">
+                                    Open Source Community
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                                <label class="form-check-label" for="defaultCheck1">
+                                    Gitter Help Rooms
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                                <label class="form-check-label" for="defaultCheck1">
+                                    Videos
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                                <label class="form-check-label" for="defaultCheck1">
+                                    City Meetups
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                                <label class="form-check-label" for="defaultCheck1">
+                                    Wiki
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                                <label class="form-check-label" for="defaultCheck1">
+                                    Forum
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                                <label class="form-check-label" for="defaultCheck1">
+                                    Additional Courses
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <!-- Any Comments or Suggestions? -->
+                    <div class="form-group row">
+                        <label id="number-label" class="col-md-6 col-form-label">
+                            <span>Any Comments or Suggestions?</label>
+                        <div class="col-md-6">
+                            <textarea placeholder="Enter your comments here..."></textarea>
+                        </div>
+                    </div>
+
+                    <div class="col-md-12">
+                        <button type="submit" id="submit" class="btn-primary btn-md btn-block">Submit</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
